@@ -1,13 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main max-w-full md:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl  m-auto">
+        <div class=" flex justify-between items-center mt-5 mb-4">
+            <div class="col inline-block md:ml-8 mx-4 xl:block">
+                <a href="index.html"><img src="src/img/Logo.png" alt=""  class="" ></a> 
+            </div>
+            <div class="col md:ml-2">
+                <ul>
+                    <li class=" hover:text-red-600 text-zinc-700 font-medium hidden md:inline-block md:mx-3 "><a href="index.html">Home</a></li>
+                    <li class=" text-zinc-700 hover:text-red-600 font-medium hidden md:inline-block md:mx-3 "><a href="detail.html">Products</a></li>
+                    <li class=" text-zinc-700 hover:text-red-600 font-medium hidden md:inline-block md:mx-3 "><a href="products.html">About Us</a></li>
+                    <li class=" text-zinc-700 hover:text-red-600 font-medium hidden md:inline-block md:mx-3 "><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class=" col inline-block md:mr-6 flex">
+               
+                <i class="fa-solid fa-cart-shopping  hover:opacity-80 mx-2 leading-10 text-2xl cursor-pointer "></i>
+                <button class="font-medium hover:opacity-70 text-xs mx-2 hidden border border-red-500 text-red-500 px-4 py-2 rounded-md md:block xl:block ">
+                <a href="sign-in.html">Sign In</a></button>
+                <button class="font-medium hover:opacity-70  text-xs mx-3.5 hidden border border-red-500 bg-red-500 text-white px-4 py-2 rounded-md md:block xl:block">
+                 <a href="sign-up.html">Sign Up</a></button>
+                    <i class="fa-solid fa-bars mr-1.5 pl-2 cursor-pointer text-4xl items-center md:hidden xl:hidden"></i>
+            </div>
+        </div>
+        <div class=" mt-16 flex mb-16 ml-3">
+            <div class=" basis-3/6 pt-6 md:m-auto md:basis-1/5 xl:basis-6/12">
+              
+                <button class="text-red-500 font-bold cursor-default text-sm  bg-red-100 py-1 px-4 rounded mb-8 ">Quanlity
+                    Food</button>
+                    
+                <h1 class="text-7xl md:text-6xl font-black text-stone-800">Fastest</h1>
+                <span class="text-7xl  md:text-6xl font-black text-red-500"> Delivery</span>
+                <span class="text-6xl   md:text-6xl font-extrabold text-stone-800"> & </span>
+                <div class="text-7xl   md:text-6xl font-black text-stone-800"> Easy <span
+                        class="text-7xl   md:text-6xl font-black text-red-500">Pickup</span> </div>
+                    
+                <p class="text-gray-500 md:text-sm xl:text-lg mt-8 mb-4">Best cooks and best delivery guys all at your service. Hot tasty food
+                    will reach you in 60 minutes.</p>
+                <div class="flex mt-6">
+                    <input type="text" placeholder="Enter your delivery location"
+                        class=" focus:outline-none border border-red-500 border rounded-l-md md:pr-6 pl-4 py-3 pr-16">
+                    <button
+                        class=" border border-red-500 bg-red-500 text-white text-xs font-medium  rounded-r-md pl-8 pr-12 mr-2.5 "
+                        style="margin-left:-5px;line-height: 23px; ">Discover</button>
+                </div>
+            </div>
+            <div class=" basis-3/6 flex justify-end  xl:block ">
+                <img src="src/img/Images.png" alt="" class="basis-full hidden md:block xl:ml-8">
+            </div>
+        </div>
+        <div class="row">
+        <div class=" flex justify-center md:ml-6">
+            <div class="">
+                <h2 class="text-center text-4xl font-bold mb-4">Our Popular Dishes</h2>
+                <p class="text-center text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed
+                    do eiusmod tempor incididunt ut </p>
+                <p class="text-center text-gray-500 text-sm ">labore et
+                    dolore magna aliqut enim ad minim</p>
+            </div>
+        </div>
+        <div class=" grid mx-4 grid-cols-1 md:grid-cols-2 md:gap-8 md:mx-4 md:m-auto my-8 md:mt-4 xl:grid-cols-3 xl:mt-11 gap-8">
+            <div class=" ">
+                <div class="items ">
+                    <img src="src/img/Mask Group.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#"> Big and Juicy Wagyu Beef Cheeseburger</a>  </p>
+                    <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4  "></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="items  ">
+                    <img src="src/img/Mask Group2.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#"> Fresh Lime Roasted Salmon</a></p>
+                     <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4  "></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="items ">
+                    <img src="src/img/Mask Group3.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#"> The Best Easy One Pot Chicken and Ric e</a></p>
+                    <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4  "></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+        
+       
+            <div class="">
+                <div class="items  ">
+                    <img src="src/img/Mask Group4.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#">Fresh and Healthy Mixed Mayonnaise</a> </p>
+                    <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4"></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="items  ">
+                    <img src="src/img/Mask Group5.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#">The Creamiest Creamy Chicken </a> </p>
+                     <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4  "></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="items  ">
+                    <img src="src/img/Mask Group6.png" alt="" class="">
+                    <p class="text-red-500 font-medium mt-4"> <a href="#">Fruity Pancake with Orange & Blueberr a</a>  </p>
+                    <div class="mt-6">
+                        <i class="fa-solid fa-clock inline-block"></i>
+                        <span>30 Minutes</span>
+                        <i class="fa-solid fa-utensils inline-block ml-4  "></i>
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class=" my-8 md:mx-4 mx-4">
+            <div class=" flex justify-between">
+                <h2 class="text-3xl font-bold inline-block  ">Categories</h2>
+                <button class=" border border-red-500 text-xs px-4 rounded font-semibold text-red-500 inline-block">View
+                    All Categories</button>
+            </div>
+        </div>
+        <div class=" my-4 ">
+            <div class="grid grid-cols-3 md:grid-cols-6 xl:gap-16 ml-8">
+                <div class="my-2 ">
+                    <img src="src/img/Group 890.png" alt="" class="w-10/12">
+                    <span class="ml-4 font-medium">Breakfast</span>
+                </div>
+                <div class="my-2">
+                    <img src="src/img/Group 879.png" alt="" class="w-10/12  ">
+                    <span class="ml-4 font-medium">Vegan</span>
+                </div>
+                <div class="my-2">
+                    <img src="src/img/Group 891.png" alt="" class="w-10/12 ">
+                    <span class="ml-4 font-medium">Meat</span>
+                </div>
+                <div class="my-2">
+                    <img src="src/img/Group 892.png" alt="" class="w-10/12 ">
+                    <span class="ml-4 font-medium">Dessert</span>
+                </div>
+                <div class="my-2">
+                    <img src="src/img/Group 893.png" alt="" class="w-10/12 ">
+                    <span class="ml-4 font-medium">Lunch</span>
+                </div>
+                <div class="my-2">
+                    <img src="src/img/Group 894.png" alt="" class="w-10/12">
+                    <span class="ml-4 font-medium">Chocolate</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row my-16 mx-4 ">
+            <div class="col">
+                <h2 class="text-center text-3xl font-bold ">Contact us</h2>
+            </div>
+        
+        <div class="row grid grid-cols-1 md:grid-cols-1  xl:grid-cols-2">
+        <div class="row xl:my-4 md:mx-6 xl:mx-1 ">
+            <form action="">
+            <div class="col mt-4">
+                <label for="name" ri class="block uppercase text-gray-500 text-sm font-medium  ">
+                    Name
+                </label>
+                <input type="text" required placeholder="Enter your name..." id="name" class="inline-block border w-full  xl:w-full- pl-4  py-2 rounded text-sm">
+            </div>
+            <div class="col mt-4">
+                <label for="email"   class="block uppercase text-gray-500 text-sm font-medium">
+                    emAIL aDDRESS
+                </label>
+                <input type="email"  required placeholder="Your email address..." id="email" class="inline-block border w-full xl:w-full- pl-4 py-2 rounded text-sm">
+            </div>
+            
+        </div>
+        <div class="row xl:my-4 md:ml-6 ">
+            <div class="col mt-4 ">
+                <label for="subject" class="block uppercase text-gray-500 text-sm font-medium">
+                    Subject
+                </label>
+                <input type="text"  required  placeholder="Enter Subject..." id="subject" class="inline-block border w-full pl-4 py-2 rounded text-sm">
+            </div>
+            <div class="col mt-4 ">
+                <label for="type" class="block uppercase text-gray-500 text-sm font-medium">
+                    ENquiry type
+                </label>
+                <select name="" id="type"  class="border text-gray-400 text-sm w-full  rounded pl-4" style=" height: 38px;">
+                    <option value=" " class="w-full">Advertising</option>
+                </select>
+            </div>
+            
+        
+        </div>
+    </div>
+        <div class="row md:mx-6 xl:mx-0  md:mt-4">
+           
+            <div class="col">
+                <label for="type" class="block uppercase text-gray-500 text-sm mt-4 font-medium">
+                    MEssages
+                </label>
+                <textarea name="" id="" cols="140" required rows="5" placeholder="Enter your messages" class="border pl-4 pt-2 rounded w-full"></textarea>
+            </div>
+        </div>
+        <div class="submit text-center">
+            <input type="submit" value="Submit" class="border bg-black text-white font-normal  text-xs px-40 cursor-pointer py-3  md:px-16  md:text-center rounded-lg mt-4 mb-16 xl:px-11 ">
+        </div>
+    </div>
+   </form>
+    <div class=" flex justify-between  mt-5 pt-4 border-t border-gray-200 ml-6 mb-6">
+        <div class="col inline-block hidden md:inline-block">
+           <a href="#"><img src="src/img/Logo.png" alt=""></a> 
+        </div>
+        <div class=" flex  ">
+            <ul class="m-0 p-0 flex">
+                <li class=" text-zinc-700 hover:text-red-600  font-medium mx-3 md:mx-4"><a href="#">Home</a></li>
+                <li class=" text-zinc-700 hover:text-red-600  font-medium mx-3 md:mx-4"><a class="" href="#">Products</a></li>
+                <li class=" text-zinc-700 hover:text-red-600  font-medium mx-3 md:mx-4"><a href="products.html">About Us</a></li>
+                <li class=" text-zinc-700 hover:text-red-600  font-medium mx-3 md:mx-4"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    </div>
+</body>
+
 </html>
